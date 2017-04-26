@@ -8,9 +8,9 @@ function translate(string, lexicon){
 		for (prop in lexicon){
 			// console.log("prop", prop, "value", lexicon[prop]);
 			if (wordArray[i] === prop){
-				// console.log(wordArray[i], "matches at:", lexicon[prop]);
+				console.log(wordArray[i], "matches at:", lexicon[prop]);
 				newArray.push(lexicon[prop]);
-				// console.log(newArray);
+				console.log(newArray);
 			}
 		};
 	};
@@ -18,5 +18,4 @@ function translate(string, lexicon){
 	console.log(translatedStr);
 	return translatedStr;
 }
-
 lexicon.getFrench();
