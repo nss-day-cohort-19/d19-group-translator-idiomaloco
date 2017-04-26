@@ -1,3 +1,4 @@
+
 function translate(string, lexicon){
 	string = string.toLowerCase();
 	// console.log(string);
@@ -18,21 +19,27 @@ function translate(string, lexicon){
 	console.log(translatedStr);
 	return translatedStr;
 }
-// lexicon.getFrench();
-var testStr = "Happy Mother's Day! To the best mother in the whole world!";
 
+//Event Listeners
+var output = document.getElementById("output");
+var button = document.getElementById("translate");
+var selectLanguage = document.getElementById("selectLanguage");
 
-
-// var arabic = lexicon.getArabic();
-// console.log(arabic);
-translate(testStr, Lexicon.getArabic());
-
-
-
-
-
-
-
-
-
+button.addEventListener("click", function(event){
+	var userInput = document.getElementById("userInput");
+	var testString = userInput.value;
+	if (selectLanguage.value === "Arabic"){
+		console.log("You clicked Arabic!");
+		translate(testString, Lexicon.getArabic());
+	} else if (selectLanguage.value === "Portuguese"){
+		console.log("You clicked Portuguese!");
+		translate(testString, Lexicon.getPortuguese());
+	} else if (selectLanguage.value === "French"){
+		console.log("You clicked French!");
+		translate(testString, Lexicon.getFrench());
+	} else if (selectLanguage.value === "German"){
+		console.log("You clicked German!");
+		translate(testString, Lexicon.getGerman());
+	}
+});
 

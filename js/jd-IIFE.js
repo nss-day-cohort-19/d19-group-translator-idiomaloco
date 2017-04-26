@@ -1,4 +1,5 @@
 
+
 var Jordan = (function(something){
 
 	var arabic = {

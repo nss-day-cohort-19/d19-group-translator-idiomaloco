@@ -7,7 +7,7 @@ var Lexicon = (function(){
 	return {
 		getFrench: function(){
 			console.log("Hi, this is the french page");
-			translate(string, french);
+			return french;
 			}
 		}
 })();
