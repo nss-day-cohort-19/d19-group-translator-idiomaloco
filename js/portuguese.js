@@ -1,6 +1,6 @@
 var ToPortuguese = (function(info){
 
-	var string = "Happy Mother's Day! To the best mother in the whole world!"
+	var string = "Happy Mother's Day! To the best mother in the whole world!";
 
 	var portuguese = {
 		"happy": "feliz",
@@ -12,14 +12,15 @@ var ToPortuguese = (function(info){
 		"mother": "mae",
 		"in": "em",
 		"the": "todo",
-		"whole": "o"
-		"world": "mundo",
+		"whole": "o",
+		"world": "mundo"
 	};
 
 
 	info.getPortuguese = function() {
+		console.log("Hi this is Portuguese");
 		return portuguese;
-	}
+	};
 
 	return info;
 
