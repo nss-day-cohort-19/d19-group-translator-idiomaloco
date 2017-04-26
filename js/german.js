@@ -8,7 +8,7 @@ var Lexicon = (function(lexicon) {
 
     lexicon.getGerman = function() {
             console.log("hello");
-            translate(testStr, german);
+            return german;
         };
     return lexicon;
 

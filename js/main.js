@@ -30,16 +30,16 @@ button.addEventListener("click", function(event){
 	var testString = userInput.value;
 	if (selectLanguage.value === "Arabic"){
 		console.log("You clicked Arabic!");
-		translate(testString, Lexicon.getArabic());
+		output.innerHTML = translate(testString, Lexicon.getArabic());
 	} else if (selectLanguage.value === "Portuguese"){
 		console.log("You clicked Portuguese!");
-		translate(testString, Lexicon.getPortuguese());
+		output.innerHTML = translate(testString, Lexicon.getPortuguese());
 	} else if (selectLanguage.value === "French"){
 		console.log("You clicked French!");
-		translate(testString, Lexicon.getFrench());
+		output.innerHTML = translate(testString, Lexicon.getFrench());
 	} else if (selectLanguage.value === "German"){
 		console.log("You clicked German!");
-		translate(testString, Lexicon.getGerman());
+		output.innerHTML = translate(testString, Lexicon.getGerman());
 	}
 });
 
