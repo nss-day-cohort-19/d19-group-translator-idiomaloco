@@ -1,4 +1,4 @@
-var Lexicon = (function() {
+var Lexicon = (function(lexicon) {
 
     var testStr = "Happy Mother's Day! To the best mother in the whole world!";
 
@@ -6,11 +6,10 @@ var Lexicon = (function() {
 
     var selectLanguage = document.getElementById("selectLanguage");
 
-    return {
-        getGerman: function() {
+    lexicon.getGerman = function() {
             console.log("hello");
             translate(testStr, german);
-        }
-    }
+        };
+    return lexicon;
 
-})();
+})(Lexicon);
