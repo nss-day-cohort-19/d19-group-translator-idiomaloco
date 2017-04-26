@@ -3,23 +3,63 @@
 <head>
 	<title>Idioma Loco Translator</title>
 	<meta charset="utf-8">
+	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+	<header class="z-depth-4">
+		<h2 class="h2">Translator</h2>
+	</header>
+	<div class="wrapper">
+		<div class="row z-depth-4">
+		    <form class="col s12">
+		      	<div class="row">
+		        	<div class="input-field col s12">
+		            	<textarea id="userInput" class="materialize-textarea"></textarea>
+		           		<label for="userInput">Textarea</label>
+		        	</div>
+		        	<div class="input-field col s6">
+		        		<select id="selectLanguage">
+		        			<option value="" disable selected>Choose a language</option>
+							<option value="Hindi">Hindi</option>
+							<option value="French">French</option>
+							<option value="Portuguese">Portuguese</option>
+							<option value="German">German</option>
+						</select>
+						<label>Language Options</label>
+		            </div>
+		      	</div>
+	    	</form>
+		</div>
+<!-- 	<textarea id="userInput" rows="10" cols="50">Happy Mother's Day! To the best mother in the whole world!</textarea><br> -->
 
-	<textarea id="userInput" rows="10" cols="50">Happy Mother's Day! To the best mother in the whole world!</textarea><br>
-
-	<select id="selectLanguage">
+	<!-- <select id="selectLanguage">
 		<option value="Hindi">Hindi</option>
 		<option value="French">French</option>
 		<option value="Portuguese">Portuguese</option>
 		<option value="German">German</option>
-	</select><br>
+	</select><br> -->
+	<div class="wrapper">
+		<button class="btn waves-effect waves-light" id="translate" type="submit">Translate</button>
+		<button class="btn waves-effect waves-light" id="audio" type="submit" value='🔊 Play'>Play</button>
+	</div>
+	<div class="wrapper">
+		<div id="output"></div>
+	</div>
 
-	<button id="translate">Translate</button>
 
-	<div id="output"></div>
-	<input id="audio" type='button' value='🔊 Play' />
 
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>$(document).ready(function() {
+    $('select').material_select();
+  });</script>
 	<script type="text/javascript" src="js/french.js"></script>
 	<script type="text/javascript" src="js/german.js"></script>
 	<script type="text/javascript" src="js/jd-IIFE.js"></script>

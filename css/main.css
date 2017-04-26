@@ -1,0 +1,30 @@
+.wrapper {
+	display: flex;
+	width: 95%;
+	/*justify-content: ;*/
+	flex-wrap: wrap;
+	margin: auto;
+	font-size: 3rem;
+}
+
+#userInput {
+	font-size: 3rem;
+}
+
+.row {
+	margin-top: 15px;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	background-color: rgba(38, 166, 159, 1);
+	height: 10rem;
+	color: white;
+	align-items: center;
+	padding-left: 2.5rem;
+}
+
+#output {
+	margin-top: 15px;
+}
