@@ -22,3 +22,5 @@ function translate(string, lexicon){
 	return translatedStr;
 }
 
+Lexicon.getGerman();
+
