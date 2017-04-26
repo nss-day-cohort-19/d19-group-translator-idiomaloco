@@ -20,6 +20,9 @@ function translate(string, lexicon){
 	return translatedStr;
 }
 
+
+
+
 //Event Listeners
 var output = document.getElementById("output");
 var button = document.getElementById("translate");
@@ -28,9 +31,9 @@ var selectLanguage = document.getElementById("selectLanguage");
 button.addEventListener("click", function(event){
 	var userInput = document.getElementById("userInput");
 	var testString = userInput.value;
-	if (selectLanguage.value === "Arabic"){
-		console.log("You clicked Arabic!");
-		output.innerHTML = translate(testString, Lexicon.getArabic());
+	if (selectLanguage.value === "Hindi"){
+		console.log("You clicked Hindi!");
+		output.innerHTML = translate(testString, Lexicon.getHindi());
 	} else if (selectLanguage.value === "Portuguese"){
 		console.log("You clicked Portuguese!");
 		output.innerHTML = translate(testString, Lexicon.getPortuguese());
