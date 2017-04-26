@@ -44,5 +44,13 @@ button.addEventListener("click", function(event){
 		console.log("You clicked German!");
 		output.innerHTML = translate(testString, Lexicon.getGerman());
 	}
+
+	var audio = document.getElementById("audio");
+	audio.addEventListener("click", function(){
+	responsiveVoice.speak(output.innerHTML);
+	})
 });
+
+
+
 
