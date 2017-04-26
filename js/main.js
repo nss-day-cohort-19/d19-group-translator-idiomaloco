@@ -1,16 +1,17 @@
+
 function translate(string, lexicon){
 	string = string.toLowerCase();
-	console.log(string);
+	// console.log(string);
 	var wordArray = string.split(" ");
-	console.log(wordArray);
+	// console.log(wordArray);
 	var newArray = [];
 	for (var i = 0; i < wordArray.length; i++){
 		for (prop in lexicon){
 			// console.log("prop", prop, "value", lexicon[prop]);
 			if (wordArray[i] === prop){
-				console.log(wordArray[i], "matches at:", lexicon[prop]);
+				// console.log(wordArray[i], "matches at:", lexicon[prop]);
 				newArray.push(lexicon[prop]);
-				console.log(newArray);
+				// console.log(newArray);
 			}
 		};
 	};
@@ -19,6 +20,7 @@ function translate(string, lexicon){
 	return translatedStr;
 }
 
+//Event Listeners
 var output = document.getElementById("output");
 var button = document.getElementById("translate");
 var selectLanguage = document.getElementById("selectLanguage");
@@ -40,3 +42,4 @@ button.addEventListener("click", function(event){
 		translate(testString, Lexicon.getGerman());
 	}
 });
+
