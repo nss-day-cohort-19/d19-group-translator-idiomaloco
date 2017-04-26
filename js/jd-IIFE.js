@@ -2,21 +2,21 @@
 
 var Jordan = (function(something){
 
-	var arabic = {
-		"world!": "10",
-		"whole": "9",
-		"the": "8",
-		"in": "7",
-		"mother": "6",
-		"best": "5",
-		"to": "4",
-		"day!": "3",
-		"mother's": "2",
-		"happy": "1"
+	var hindi = {
+		"world!": "विश्व!",
+		"whole": "पूरा का पूरा",
+		"the": "इस",
+		"in": "म",
+		"mother": "मां",
+		"best": "श्रेष्ठ",
+		"to": "सेवा मेरे",
+		"day!": "दिन!",
+		"mother's": "माँ का",
+		"happy": "खुश"
 	};
 
-	something.getArabic = function(){
-		return arabic;
+	something.getHindi = function(){
+		return hindi;
 	}
 
 
