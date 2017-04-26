@@ -1,6 +1,3 @@
-
-
-
 function translate(string, lexicon){
 	string = string.toLowerCase();
 	console.log(string);
@@ -21,4 +18,4 @@ function translate(string, lexicon){
 	console.log(translatedStr);
 	return translatedStr;
 }
-
+lexicon.getFrench();
