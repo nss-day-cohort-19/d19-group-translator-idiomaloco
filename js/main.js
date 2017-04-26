@@ -54,3 +54,28 @@ button.addEventListener("click", function(event){
 
 
 
+
+var dataRequest = new XMLHttpRequest();
+
+dataRequest.addEventListener("load", dataRequestComplete);
+dataRequest.addEventListener("error", dataRequestFailed);
+
+function dataRequestComplete (event) {
+    console.log("The file has loaded and we have data");
+    var data = JSON.parse(event.target.responseText);
+    console.log("The data is:", data);
+
+    dataToDOM(data);
+};
+
+var outputArea = document.getElementById("outputArea");
+
+function dataRequestFailed (event) {
+    console.log("Oops, an error occured while getting the data");
+};
+
+var textReplace = "Hello";
+var translatedLanguage = "fr";
+var startLanguage = "en"
+dataRequest.open("GET", `http://www.transltr.org/api/translate?text=${textReplace}&to=${translatedLanguage}&from=${startLanguage}`);
+dataRequest.send()
